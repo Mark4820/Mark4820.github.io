@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+ 	  <meta name="keywords" content="Mb">
+  	<meta name="author" content="mark">
+    <title>Welcome Home</title>
+    <link rel="stylesheet" href="./css/style.css">  
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+              
+          <h1><span class="highlight">MARK WILSON</span> Barandino </h1>
+       
+        </div>
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+           <li><a
+href="education.html">Education</a></li>
+            <li><a
+href="skills.html">Skills </a></li>
+            <li><a
+href="hobbies.html">Hobbies</a></li>
+            <li><a
+href="picture.html">Photo</a></li> 
+<li><a
+href="contact.html">Contact</a></li>
+            <li><a
+
+        </ul>
+        </nav>
+      </div>
+    </header>
+    <style>
+        
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+  }
+
+  /* Apply animation to heading */
+  h2 {
+    overflow: hidden;
+    border-right: .15em solid orange; /* creates the typewriter cursor effect */
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .12em;
+    animation: typing 3s steps(30, end) forwards;
+  }
+
+</style>
+
+
+
+<style>
+  .containerss {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  
+  .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .circle img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+</style>
+
+<body>
+
+<div class="containerss">
+  <div class="circle">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="/storage/emulated/0/DCIM/A website/Cover.jpg" alt="Profile Picture">
+        </div>
+        <div class="flip-card-back">
+          <h1>Mark MyWords</h1>
+          <p>Teamwork makes the dream work </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>Hi! Welcome to my Website</h2>
+    <h2>I am Mark Wilson</h2>
+    <h2>Salvadora Barandino</h2>
+    <p>BS Information System</p>
+    <p> Northwest Samar State University</p>
+  </div>
+</div>
+
+
+
+<style>
+  #animated-paragraph {
+    font-size: 24px;
+    animation: animateText 2s infinite; /* 2s duration, infinite loop */
+  }
+
+  @keyframes animateText {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+</style>
+
+
+<p id="animated-paragraph">Im Your Buddy</p>
+<p id="animated-paragraph">Your System Analyst</p>
+<p id="animated-paragraph">Your Web Developer/Designer</p>
+
+
+<div>
+    <section >
+      <div class="container">
+          
+     
+          <p style="color: Black;">"You don't need anyone's permission to chase your dreams. You only need your own permission because you are the one that can create the roadblocks in your life or open up the way for your success."--- Mark MyWords</p>
+      
+          <p style="color: red">Take Note: Life isn't about finding yourself. Life is about creating yourself.
+What we think determines what happens to us, so if we want to change our lives, we need to stretch our minds.
+</p>
+        
+              </div>
+    </section>
+
+
+.<!-- Element to animate -->
+<div class="typewriter-text"></div>
+
+<script>
+  // Text to be typed
+  const text = "YOU CAN CALL ME IN MY CONTACT DETAILS";
+
+  // Get the element to animate
+  const element = document.querySelector('.typewriter-text');
+
+  // Function to animate the typing effect
+  function typeWriter(text, i, fnCallback) {
+    // Check if text isn't finished yet
+    if (i < (text.length)) {
+      // Add next character to the element
+      element.innerHTML = text.substring(0, i+1);
+      // Wait for a while and call this function again for next character
+      setTimeout(function() {
+        typeWriter(text, i + 1, fnCallback)
+      }, 100);
+    }
+    // Text finished, call callback if there is one
+    else if (typeof fnCallback == 'function') {
+      // Execute callback after animation is complete
+      setTimeout(fnCallback, 700);
+    }
+  }
+
+  // Start typing animation
+  function startTypingAnimation() {
+    if (typeof text === 'string') {
+      // Start typing animation
+      typeWriter(text, 0, function(){
+        // Animation complete, loop back to beginning
+        startTypingAnimation();
+      });
+    }
+  }
+
+  // Start the animation
+  startTypingAnimation();
+</script>
+
+    <section id="Emailus">
+      <div class="container">
+        <h3 style="color: white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;">Subscribe For Update</h3>
+        <form>
+          <input type="email" placeholder="Enter Email..." required>
+          <button type="submit" class="button_1">Subscribe</button>
+        </form>
+      </div>
+    </section>
+    
+    
+<!-- Popup content -->
+<div class="popup">
+  <p style="color: red;">Thank you for visiting Mark Wilson Barandino website!</p>
+</div>
+
+<script>
+  // Script to display the popup after the page loads
+  window.onload = function() {
+    // Get the popup element
+    var popup = document.querySelector('.popup');
+    // Show the popup
+    popup.style.display = 'block';
+    // Close the popup after 3 seconds (adjust as needed)
+    setTimeout(function(){
+      popup.style.display = 'none';
+    }, 3000);
+  };
+</script>
+
+<div class="loader"></div>
+
+<script>
+    // JavaScript to hide loader after 10 minutes
+    setTimeout(function(){
+      document.querySelector('.loader').style.display = 'none';
+    }, 1000); 
+  </script>
+  
+
+    <footer>
+      <p>Mark Wilson Barandino Web Design, Copyright &copy; 2024</p>
+    </footer>
+  </body>
+  
+    
+</html>
