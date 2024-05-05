@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=0.5">
+	  <meta name="keywords" content="Mb">
+  	<meta name="author" content="mark">
+    <title>Welcome MyEducation</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="/storage/emulated/0/DCIM/Camera/IMG_20240406_100616.jpg">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1><span class="highlight">MARK WILSON</span> Barandino</h1>
+        </div>
+       
+        <nav>
+          <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+           <li><a
+href="education.html">Education</a></li>
+            <li><a
+href="skills.html">Skills </a></li>
+            <li><a
+href="hobbies.html">Hobbies</a></li>
+            <li><a
+href="picture.html">Photo</a></li> 
+<li><a
+href="contact.html">Contact</a></li>
+            <li><a
+
+        </ul>
+        </nav>
+       
+      </div>
+    </header>
+   
+   <style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  .highlight {
+    background-color: #ffcc00;
+  }
+</style>
+</head>
+<body>
+
+<h2>Educational Background</h2>
+
+<table border="2">
+  <tr>
+    <th style="color: blue;">School Name</th>
+    <th style="color: blue;">Degree/Deplomas/Certificate</th>
+    <th style="color: blue;">Year</th>
+  </tr>
+  <tr>
+    <td class="highlight" onclick="searchGoogle('Talahiban Elementary School')">Talahiban Elementary School</td>
+    <td>1st Honorable/ Best In Math, Filipino, Science</td>
+    <td>2013-2014</td>
+  </tr>
+  <tr>
+    <td class="highlight" onclick="searchGoogle('Tarabucan National High School')">Tarabucan National High School</td>
+    <td>Graduate/Academic Awards</td>
+    <td>2017-2018</td>
+  </tr>
+  <tr>
+    <td class="highlight" onclick="searchGoogle('Tarabucan Senior High School')">Tarabucan Senior High School</td>
+    <td>Graduate/Academic Awards</td>
+    <td>2020-2021</td>
+  </tr>
+   <tr>
+    <td class="highlight" onclick="searchGoogle('Northwest Samar State University')">Northwest Samar State University</td>
+    <td>Bachelor of Science In Information System </td>
+    <td>2022-Current</td>
+  </tr>
+</table>
+
+<script>
+function searchGoogle(schoolName) {
+  window.open("https://www.google.com/search?q=" + encodeURIComponent(schoolName));
+}
+</script>
+<br></br>
+<style>
+  .box {
+    border: 2px solid #000;
+    padding: 20px;
+    width: 550px;
+    margin: 0 auto;
+    background-color: #fff;
+  }
+</style>
+
+
+<div class="box">
+  <h2>Educational Journey</h2>
+  <p style="text-align: justify;">My educational journey has provided me with a solid foundation in both primary and secondary education, which prepared me for higher studies in BS Information System at Northwest Samar State University. my time at Talahiban Elementary School and Tarabucan National High School likely instilled me in my essential skills such as critical thinking, problem-solving, and communication.
+
+As a college student pursuing a degree in Information Systems, i am exposed to various subjects such as programming, database management, and information technology. These courses are equipping me with the technical skills and knowledge necessary for a career in the field of information technology.
+
+Furthermore, my experiences in different educational institutions have likely helped me to develop important qualities such as adaptability, resilience, and teamwork, all of which are invaluable in any career path. My journey so far has laid the groundwork for a successful career in the dynamic and ever-evolving field of information systems.
+      </p>
+  <p style="color: Red;">- Mark Wilson S. Barandino</p>
+</div>
+
+
+     
+  
+ 
+ 
+    <footer>
+      <p>Mark Wilson Barandino Web Design, Copyright &copy; 2024</p>
+    </footer>
+    
+</html>
